@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> On-Call </title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="disease.json"></script>
+  <script type="text/javascript" src="selection.js"></script>
+</head>
+<body>
+
+  <div id="header">
+    <h1 style="text-align: center; vertical-align: middle;"> On-Call </h1>
+  </div>
+
+  <div id="checklist">
+    <h2 style="text-align: center;"> Check all that apply </h2>
+    <form>
+      <table style="width:50%" align="center">
+        <tr>
+          <td>
+            <label class="label"> Aches
+              <input type="checkbox" id="aches" value="aches"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Chest Pain
+              <input type="checkbox" id="chest_pain" value="chest_pain"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Chills
+              <input type="checkbox" id="chills" value="chills"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Congestion
+              <input type="checkbox" id="congestion" value="congestion"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Cough
+              <input type="checkbox" id="cough" value="cough"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Diarrhea
+              <input type="checkbox" id="diarrhea" value="diarrhea"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Fatigue
+              <input type="checkbox" id="fatigue" value="fatigue"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Fever
+              <input type="checkbox" id="fever" value="fever"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+          </td>
+          <td>
+            <label class="label"> Headache
+              <input type="checkbox" id="headache" value="headache"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Nausea
+              <input type="checkbox" id="nausea" value="nausea"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Rash
+              <input type="checkbox" id="rash" value="rash"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Runny Nose
+              <input type="checkbox" id="runny_nose" value="runny_nose"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Sneezing
+              <input type="checkbox" id="sneezing" value="sneezing"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Sore Throat
+              <input type="checkbox" id="sore_throat" value="sore_throat"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Swollen Tonsils
+              <input type="checkbox" id="swollen_tonsils" value="swollen_tonsils"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+            <label class="label"> Vomiting
+              <input type="checkbox" id="vomiting" value="vomiting"> </input>
+              <span class="checkmark"></span>
+            </label> <br>
+          </td>
+        </tr>
+      </table>
+      <div id="submit_div">
+        <input type="button" id="submit" value="Diagnose" style="display: block; margin: 0 auto;" onclick="checkSymptoms(); calculateChances(); window.location.href='diagnosis.html'" />
+      </div>
+  </div>
+
+  <div id="results">
+  </div>
+</body>
+</html>

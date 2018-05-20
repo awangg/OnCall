@@ -1,0 +1,51 @@
+var treatment_list = {
+  "rest": {
+    "name": "Have a Good Rest",
+    "description": "Inactivity or refreshing ease",
+    "link": "https://www.irishtimes.com/polopoly_fs/1.2709854.1467626578!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
+    "dosage": 100,
+    "timeframe": 2
+  },
+  "tylenol": {
+    "name": "Take Tylenol",
+    "description": "A painkiller, can treat minor aches and fever",
+    "link": "https://www.tylenol.com/sites/tylenol_us/files/styles/medium/public/tyl_est_charm_bty_ft.jpg",
+    "dosage": 100,
+    "timeframe": 2
+  },
+  "advil": {
+    "name": "Take Advil",
+    "description": "A painkiller, can treat minor aches and fever",
+    "link": "https://images-na.ssl-images-amazon.com/images/I/917DL6AA0PL._SY355_.jpg",
+    "dosage": 100,
+    "timeframe": 2
+  },
+  "flonase": {
+    "name": "Buy Flonase",
+    "description": "A medication for treating pain, swelling, itching and other skin problems",
+    "link": "https://images-na.ssl-images-amazon.com/images/I/716O69aqAjL._SY355_.jpg",
+    "dosage": 100,
+    "timeframe": 2
+  },
+  "erythromycin": {
+    "name": "Get Erythromycin",
+    "description": "An antibiotic effective for the treating bacterial infections",
+    "link": "https://www.dental-directory.co.uk/VirtualImageDirectory/SourceImages/N/A/E/NAE015.jpg",
+    "dosage": 100,
+    "timeframe": 2
+  },
+  "cough_syrup": {
+    "name": "Ingest Cough Syrup",
+    "description": "A medication for treating coughing",
+    "link": "https://www.m-medix.com/2585-large_default/robitussin-chesty-cough-syrup-100ml.jpg",
+    "dosage": 100,
+    "timeframe": 2
+  },
+  "aleve": {
+    "name": "Take Aleve",
+    "description": "A painkiller that can also treat fevers",
+    "link": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.healthline.com%2Fhlcmsresource%2Fimages%2Ftopic_centers%2FPainRelife%2F766x415_Aleve-What_Are_the_Side_Effects.jpg&imgrefurl=https%3A%2F%2Fwww.healthline.com%2Fhealth%2Fpain-relief%2Faleve-naproxen-side-effects&docid=WhQKSTAHoB7BRM&tbnid=1t1QTH9HWVOhhM%3A&vet=10ahUKEwifpuThrpPbAhVNuVkKHWjLDjAQMwjEASggMCA..i&w=766&h=415&bih=803&biw=1440&q=aleve&ved=0ahUKEwifpuThrpPbAhVNuVkKHWjLDjAQMwjEASggMCA&iact=mrc&uact=8",
+    "dosage": 100,
+    "timeframe": 2
+  },
+}

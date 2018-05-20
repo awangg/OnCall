@@ -1,0 +1,56 @@
+var disease_list = {
+  "flu": {
+    "name": "Flu",
+    "symptoms": ["fatigue", "aches", "cough", "sore_throat", "fever", "vomiting"],
+    "treatments": ["rest", "tylenol", "advil"],
+    "image": "https://www.bostonmagazine.com/wp-content/uploads/sites/2/2013/10/flu-virus-main.jpg",
+    "description": "A common viral infection that can be deadly, especially in high-risk groups.",
+    "doctor": false,
+    "death": 1
+  },
+  "cold": {
+    "name": "Common Cold",
+    "symptoms": ["runny_nose", "congestion", "sore_throat", "cough", "aches", "sneezing"],
+    "treatments": ["rest", "tylenol", "advil", "flonase"],
+    "image": "https://i.ytimg.com/vi/22ZVpcEOrJk/maxresdefault.jpg",
+    "description": "A common viral infection of the nose and throat.",
+    "doctor": false,
+    "death": 0
+  },
+  "strep_throat": {
+    "name": "Strep Throat",
+    "symptoms": ["sore_throat", "swollen_tonsils", "fever", "headache", "vomiting", "nausea"],
+    "treatments": ["rest", "advil", "erythromycin"],
+    "image": "http://outbreaknewstoday.com/wp-content/uploads/2014/07/16866_lores.jpg",
+    "description": "A bacterial infection that may cause a sore, scratchy throat.",
+    "doctor": false,
+    "death": 1
+  },
+  "whooping_cough": {
+    "name": "Whooping Cough",
+    "symptoms": ["runny_nose", "fever", "cough", "fatigue", "vomiting"],
+    "treatments": ["rest", "erythromycin", "cough_syrup"],
+    "image": "https://images.onhealth.com/images/slideshow/pertussis-whooping-cough-s2-sem-whopping-cough-bacteria-in-cough.jpg",
+    "description": "A highly contagious respiratory tract infection that is easily preventable by vaccine",
+    "doctor": false,
+    "death": 1
+  },
+  "mono": {
+    "name": "Mononucleosis",
+    "symptoms": ["fatigue", "sore_throat", "fever", "swollen_tonsils", "headache", "rash"],
+    "treatments": ["rest", "aleve", "advil"],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Infectious_Mononucleosis_3.jpg/290px-Infectious_Mononucleosis_3.jpg",
+    "description": "Often called mono or kissing disease, an infection with the Epstein-Barr virus",
+    "doctor": true,
+    "death": 1
+  },
+  "pneumonia": {
+    "name": "Pneumonia",
+    "symptoms": ["chest_pain", "chills", "fatigue", "nausea", "vomiting", "diarrhea"],
+    "treatments": ["rest", "erythromycin", "advil"],
+    "image": "https://cdn3.bigcommerce.com/s-2q6av/product_images/uploaded_images/pneumococci.jpg",
+    "description": "Infection that inflames air sacs in one or both lungs, which may fill with fluid.",
+    "doctor": true,
+    "death": 16
+  }
+}

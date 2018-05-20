@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> On-Call </title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <script type="text/javascript" src="treatment.json"></script>
+    <script type="text/javascript" src="disease.json"></script>
+    <script type="text/javascript" src="editMedication.js"></script>
+  </head>
+  <body onload="loadExisting()">
+
+    <div id="header">
+      <h1 style="text-align: center; vertical-align: middle;"> On-Call </h1>
+    </div>
+
+    <h1 style="text-align: center; padding-top: 10px"> Current Medications </h1>
+
+    <div id="add-med" style="padding-left: 10px; width: 70%; float: left">
+      <label class="label"> Add Medication
+        <input type="checkbox" id="addition" value="addition" style="float:left"></input>
+        <span class="checkmark"> </span>
+      </label>
+      <div id="medication-input" style="display: none; width: 100%">
+        <label for="med-name"> Medication Name </label>
+        <input type="text" id="med-name" placeholder=""="Medication Name">
+
+        <label for="dosage"> Dosage (default in mg) </label>
+        <input type="text" id="dosage" placeholder=""="Dosage">
+
+        <label for="timeframe"> Frequency </label>
+        <select id="timeframe">
+          <option value="1,30"> Once every thirty minutes </option>
+          <option value="1,60"> Once every hour </option>
+          <option value="1,120"> Once every two hours </option>
+          <option value="1,240"> Once every four hours </option>
+          <option value="1,480"> Once every eight hours </option>
+          <option value="1,720"> Once every twelve hours </option>
+          <option value="1,1440"> Once every 24 hours </option>
+        </select>
+
+        <input type="button" id="submit" value="Submit" style="display: block; margin: 0 auto;" onclick="addMedication(); document.getElementById('addition').checked = false; document.getElementById('medication-input').style.display = 'none'"> </input>
+      </div>
+    </div>
+
+    <div id="menu=button" style="padding: 1% 1%; float: right; width: 20%">
+      <input type="button" id = "submit" value="Return Home" style="float: right;" onclick="window.location.href='index.html'"></input>
+    </div>
+
+    <script type="text/javascript">
+      var div = document.getElementById("medication-input")
+      document.getElementById("addition").onchange = function() {
+        if(this.checked) {
+          div.style.display = 'block';
+          div.style.backgroundColor = '#eee';
+          div.style.padding = '10px';
+          div.style.borderRadius = '4px';
+          div.style.width = '95%';
+        }else {
+          div.style.display = 'none';
+        }
+      };
+    </script>
+
+  </body>
+</html>
