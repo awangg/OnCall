@@ -52,5 +52,23 @@ var disease_list = {
     "description": "Infection that inflames air sacs in one or both lungs, which may fill with fluid.",
     "doctor": true,
     "death": 16
+  },
+  "bronchitis": {
+    "name": "Bronchitis",
+    "symptoms": ["cough", "chest_pain", "runny_nose", "headache", "fatigue"],
+    "treatments": ["rest", "cough_syrup", "advil", "tylenol"],
+    "image": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/bronchitis_slideshow/PRinc_rm_image_of_flu_viruses_in_lung.jpg",
+    "description": "Inflammation of the lining of bronchial tubes, which carry air to and from the lungs.",
+    "doctor": true,
+    "death": 0
+  },
+  "hepatitis-a": {
+    "name": "Hepatitis A",
+    "symptoms": ["diarrhea", "fever", "nausea", "vomiting", "fatigue"],
+    "treatments": ["rest"],
+    "image": "http://netdoctor.cdnds.net/15/43/980x490/landscape-1445726071-g-hepatitis-a-548299375.jpg",
+    "description": "A highly contagious liver infection caused by the hepatitis A virus.",
+    "doctor": false,
+    "death": 0
   }
 }
