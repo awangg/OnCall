@@ -82,9 +82,14 @@ function buildTreatments() {
     newimg.setAttribute("style", "float:left; width:275px; height:225px; vertical-align:center");
     newdiv.append(newimg);
 
-    let description = "<h1 style='text-align:center; color: #1987c1'>" + "#" + (i + 1) + " " + treatments[medicine].name + "</h1>";
+    let description = "<h1 id='" + treatments[medicine].id + "' style='text-align:center; color: #1987c1'>" + "#" + (i + 1) + " " + treatments[medicine].name + "</h1>";
     description += "<br> <p style='text-align: center; font-size: 18px'>" + treatments[medicine].description + "</p>";
     newdiv.innerHTML += description;
+
+    if(treatments[medicine].dosage > 0) {
+      var button = "<input type='button' id = 'submit' value='Add to Medications' style='position: relative; right: 0; bottom: 0' onclick='medicineDirect(this)'></input>"
+      newdiv.innerHTML += button;
+    }
 
     document.body.append(newdiv);
   }
@@ -95,4 +100,37 @@ function buildTreatments() {
   button.setAttribute("style", "display: block; margin: 0 auto; text-align: center");
   button.setAttribute("onclick", "window.location.href='index.html'");
   document.body.append(button);
+}
+
+function medicineDirect(element) {
+  var div = element.parentElement;
+  var id = div.getElementsByTagName("h1")[0].id;
+
+  console.log(id);
+
+  var nam = id.toUpperCase();
+  var dos = treatments[id].dosage;
+  var fre = treatments[id].timeframe;
+
+  if(sessionStorage.getItem("currNam") != null) {
+    currentNames = sessionStorage.getItem("currNam");
+    currentDoses = sessionStorage.getItem("currDos");
+    currentFreqs = sessionStorage.getItem("currFre");
+
+    console.log(currentNames.length);
+
+    currentNames += "," + nam;
+    currentDoses += "," + dos;
+    currentFreqs += "," + fre;
+
+    console.log(currentNames.length);
+
+    sessionStorage.setItem("currNam", currentNames);
+    sessionStorage.setItem("currDos", currentDoses);
+    sessionStorage.setItem("currFre", currentFreqs);
+  }else {
+    sessionStorage.setItem("currNam", [nam]);
+    sessionStorage.setItem("currDos", [dos]);
+    sessionStorage.setItem("currFre", [fre]);
+  }
 }
